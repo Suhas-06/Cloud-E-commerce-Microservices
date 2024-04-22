@@ -15,7 +15,8 @@ app.use(express.json());
 mongoose.connect(
     //"mongodb://localhost:27017", to run on node js seperately
     //http://localhost:7100/product Postman URL
-    "mongodb://mongo:27017",
+    //"mongodb://mongo:27017", to run on docker
+    "mongodb://mongodb:27017",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
