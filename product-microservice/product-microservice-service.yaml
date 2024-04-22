@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-microservice
+spec:
+  selector:
+    app: product-microservice
+  ports:
+    - protocol: TCP
+      port: 7100
+      targetPort: 7100
+      nodePort: 30002
+  type: NodePort
