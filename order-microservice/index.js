@@ -11,7 +11,8 @@ var channel, connection;
 
 mongoose.connect(
     //"mongodb://localhost/order-service",
-    "mongodb://localhost:27017",
+    //"mongodb://mongo:27017", to run on docker
+    "mongodb://mongodb:27017",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
