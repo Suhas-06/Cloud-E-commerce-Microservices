@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: jenkins
-          image: jenkins-image
-          imagePullPolicy: Never
+          image: codercata5/jenkins
           ports:
             - containerPort: 8080
           volumeMounts:
@@ -23,10 +22,11 @@ spec:
               mountPath: /var/jenkins_home
             - name: docker-socket
               mountPath: /var/run/docker.sock
+              readOnly: true
       volumes:
         - name: jenkins-home
           hostPath:
-            path: C:/Users/suhas/Desktop/jenkins
+            path: /home/CC/jenkins
         - name: docker-socket
           hostPath:
             path: /var/run/docker.sock
