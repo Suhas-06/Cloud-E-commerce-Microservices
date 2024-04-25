@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout Source') {
             steps {
                 //sh 'curl https://google.com'
-                git  url: 'https://github.com/Suhas-06/Cloud-Computing-Project.git', branch: 'main'
+                git  url: 'https://github.com/Suhas-06/Cloud-E-commerce-Microservices.git', branch: 'main'
                 sh 'echo "Hello, git completed"'
                 sh 'dir'
             }
