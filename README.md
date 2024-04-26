@@ -28,8 +28,8 @@ To get started with the E-commerce Microservices Application, follow these steps
 Before proceeding, ensure you have the following installed:
 
 - **Docker Desktop**: Install Docker Desktop for your operating system from [Docker Hub](https://hub.docker.com/).
-- **Kubernetes**: Install Kubernetes for your platform. You can use tools like Minikube or Docker Desktop with Kubernetes enabled.
-- **RabbitMQ**: Install RabbitMQ. You can either install it locally or use a cloud-based solution.
+- **Kubernetes**: Install Kubernetes for your platform. You can use tools like Minikube or Docker Desktop with Kubernetes enabled.[Kubernetes Documentation](https://kubernetes.io/docs/setup/)
+- **RabbitMQ**: Install RabbitMQ. You can either install it locally or use a cloud-based solution.[RabbitMQ Download](https://www.rabbitmq.com/download.html)
 
 ### Setup Jenkins
 
@@ -43,11 +43,11 @@ Before proceeding, ensure you have the following installed:
    ```bash
    kubectl apply -f jenkins-service.yaml
 4. Access Jenkins through the web interface. Use the following steps to obtain the initial admin password:
-   Check the status of the Jenkins pod:
+    Check the status of the Jenkins pod:
    ```bash
    kubectl get pods
    ```
-   Find the name of the Jenkins pod and get the initial admin password:
+    Find the name of the Jenkins pod and get the initial admin password:
    ```bash
    kubectl logs <jenkins-pod-name>
 5. Open a web browser and navigate to the Jenkins URL (localhost:30000). Enter the initial admin password obtained in the previous step and follow the setup wizard to complete the installation.
@@ -80,5 +80,6 @@ After the Jenkins pipeline completes successfully, follow these steps to verify 
 1. **Check Microservices Pods in Kubernetes**:
    ```bash
    kubectl get pods
-Ensure that all microservices pods are in the "Running" state.
+   ```
+   Ensure that all microservices pods are in the "Running" state.
 2. **Interact with the Application**: Use Postman or any API testing tool to hit the endpoints provided by the microservices according to your requirements.
