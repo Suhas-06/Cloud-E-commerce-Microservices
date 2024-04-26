@@ -28,7 +28,7 @@ To get started with the E-commerce Microservices Application, follow these steps
 Before proceeding, ensure you have the following installed:
 
 - **Docker Desktop**: Install Docker Desktop for your operating system from [Docker Hub](https://hub.docker.com/).
-- **Kubernetes**: Install Kubernetes for your platform. You can use tools like Minikube or Docker Desktop with Kubernetes enabled.[Kubernetes Documentation](https://kubernetes.io/docs/setup/)
+- **Kubernetes**: Install Kubernetes for your platform. You can use tools like Minikube or Docker Desktop with Kubernetes enabled.[Kubernetes Documentation](https://kubernetes.io/releases/download/)
 - **RabbitMQ**: Install RabbitMQ. You can either install it locally or use a cloud-based solution.[RabbitMQ Download](https://www.rabbitmq.com/download.html)
 
 ### Setup Jenkins
